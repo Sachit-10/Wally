@@ -12,4 +12,5 @@ class image_repository @Inject constructor(
     }
 
     fun fetchdata() = getdao.fetchalldata()
+
 }

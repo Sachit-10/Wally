@@ -29,6 +29,8 @@ class FavouriteFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentFavouriteBinding.inflate(layoutInflater , container, false)
 
+
+        // fetching all the data stored in roo database
        imageviewmodel.fetchalldata().observe(requireActivity()){
 
             binding?.saveRv?.layoutManager = GridLayoutManager(requireContext(), 2)

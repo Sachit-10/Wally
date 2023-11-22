@@ -8,8 +8,6 @@ data class dataclass_item(
     val color: String,
     val description: String,
     val height: Int,
-
     val id: String,
     val urls: Urls
-//    val user: User,
 )

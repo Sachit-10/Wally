@@ -8,7 +8,6 @@ data class image_entity(
 
     @PrimaryKey(autoGenerate = false)
     val id:Int?=null,
-
     val image:String,
 
 )
