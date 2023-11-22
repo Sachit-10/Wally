@@ -23,7 +23,7 @@ object database_module {
         app,
         wally_database::class.java,
         "your_db_name"
-    ).build()
+    ).allowMainThreadQueries().build()
 
     @Singleton
     @Provides

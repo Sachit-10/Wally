@@ -10,11 +10,11 @@ class image_viewmodel @Inject constructor(
     private val repository:image_repository
 ): ViewModel() {
 
-    suspend fun fetchalldata(): LiveData<List<image_entity>> {
+    fun fetchalldata(): LiveData<List<image_entity>> {
         return repository.fetchdata()
     }
 
-    suspend fun insert(entity:image_entity){
+   fun insert(entity:image_entity){
         return repository.insert(entity)
     }
 }

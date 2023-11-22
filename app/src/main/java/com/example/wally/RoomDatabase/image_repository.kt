@@ -7,9 +7,9 @@ class image_repository @Inject constructor(
     private val getdao:wally_Dao
 ){
 
-    suspend fun insert(entity: image_entity){
+     fun insert(entity: image_entity){
         return getdao.insert(entity)
     }
 
-    suspend fun fetchdata() = getdao.fetchalldata()
+    fun fetchdata() = getdao.fetchalldata()
 }
